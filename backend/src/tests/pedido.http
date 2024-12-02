@@ -1,0 +1,38 @@
+# Obtener todos los pedidos
+GET https://prograweb-2024-2-inatstore-backend.azurewebsites.net/pedido
+
+###
+
+# Obtener un pedido por ID
+GET https://prograweb-2024-2-inatstore-backend.azurewebsites.net/pedido/1
+
+###
+
+# Crear un nuevo pedido
+POST https://prograweb-2024-2-inatstore-backend.azurewebsites.net/pedido
+Content-Type: application/json
+
+{
+    "idUsuario": 2,
+    "total": 380.50,
+    "direccionEnvio": "Av. Universitaria 123, Lima",
+    "metodoPago": "tarjeta"
+}
+
+###
+
+# Actualizar un pedido existente
+PUT https://prograweb-2024-2-inatstore-backend.azurewebsites.net/pedido/2
+Content-Type: application/json
+
+{
+    "total": 350.75,
+    "direccionEnvio": "Av. Universitaria 321, Lima",
+    "metodoPago": "yape",
+    "estado": "pagado"
+}
+
+###
+
+# Eliminar un pedido
+DELETE https://prograweb-2024-2-inatstore-backend.azurewebsites.net/pedido/1

@@ -1,0 +1,34 @@
+# Obtener todos los productos en el carrito de un usuario
+GET https://prograweb-2024-2-inatstore-backend.azurewebsites.net/carrito/1
+
+###
+
+# Agregar un producto al carrito
+POST https://prograweb-2024-2-inatstore-backend.azurewebsites.net/carrito
+Content-Type: application/json
+
+{
+    "idUsuario": 4,
+    "idProducto": 4,
+    "cantidad": 2
+}
+
+###
+
+# Actualizar la cantidad de un producto en el carrito
+PUT https://prograweb-2024-2-inatstore-backend.azurewebsites.net/carrito/1
+Content-Type: application/json
+
+{
+    "cantidad": 5
+}
+
+###
+
+# Eliminar un producto del carrito
+DELETE https://prograweb-2024-2-inatstore-backend.azurewebsites.net/carrito/1
+
+###
+
+# Vaciar el carrito de un usuario
+DELETE https://prograweb-2024-2-inatstore-backend.azurewebsites.net/carrito/vaciar/1
